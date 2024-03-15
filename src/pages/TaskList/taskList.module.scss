@@ -1,0 +1,15 @@
+.container {
+    background: linear-gradient(180deg, #322b5f, #100d1e);
+    height: 100vh ;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ 
+
+    & .textExample{
+        color: white;
+    }
+    
+}
