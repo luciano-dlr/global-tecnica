@@ -45,6 +45,15 @@
                 width: 100%;
     
                 border-bottom: 2px solid #171427;
+
+                &.completed {
+                    background-color: #1a162d; 
+                }
+
+                &.incomplete {
+                    background-color: #100d1e; 
+                }
+
     
                 & > .tableCell {
     
