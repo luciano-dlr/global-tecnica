@@ -1,0 +1,27 @@
+.container{
+ 
+    padding-bottom: 10px;
+    padding-top: 5px;
+
+    &>.selectContainer{
+       font-size: 14px;
+       background-color: #100d1e;
+       cursor: pointer;
+       color: white;
+       border: 1px solid white;
+       border-radius: 4px;
+       font-weight: 600;
+       padding: 4px ;
+       width: 140px;
+       
+    }
+
+    @media screen and (max-width: 500px) {
+        & > .selectContainer
+        {
+            width: 100px;
+            padding: 5; 
+            font-size: 10px; 
+        }
+    }
+}
