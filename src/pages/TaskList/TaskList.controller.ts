@@ -6,21 +6,17 @@ export const useController = () => {
 
   const [tasks, setTasks] = useState<Task[]>(Tasks);
 
-  const toggleCompleted = (taskId: number) => {
-
+  const toggleTaskStatus = (taskId: number) => {
     setTasks(currentState => currentState.map(task => {
       if (task.id === taskId) {
         return { ...task, completed: !task.completed };
       }
       return task;
-    }))
-
-  };
-
-
+    })
+  )};
   return {
-    toggleCompleted,
-    tasks
+    tasks,
+    toggleTaskStatus
   }
 }
 

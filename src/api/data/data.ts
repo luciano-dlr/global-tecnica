@@ -1,157 +1,144 @@
-export const Tasks = [
-    {
+import { Task } from "../models/Task";
+
+export const Tasks:Task[]  = [
+  {
       id: 1,
-      description: 'authentication system',
-      dueDate: '03/15/2024',
-      completed: false,
-      created: '01/10/2024'
-    },
-    {
+      description: 'Autenticación',
+      dueDate: new Date(2024, 3, 18),
+      completed: true,
+      created: new Date(2024, 2, 5)
+  },
+  {
       id: 2,
-      description: 'Optimize database',
-      dueDate: '03/16/2024',
+      description: 'Diseño de interfaz',
+      dueDate: new Date(2024, 5, 7),
       completed: false,
-      created: '01/10/2024'
-    },
-    {
+      created: new Date(2024, 1, 20)
+  },
+  {
       id: 3,
-      description: 'Refactor',
-      dueDate: '03/16/2024',
+      description: 'Implementación de base de datos',
+      dueDate: new Date(2024, 4, 30),
       completed: false,
-      created: '01/10/2024'
-    },
-    {
+      created: new Date(2024, 3, 10)
+  },
+  {
       id: 4,
-      description: 'RESTful API',
-      dueDate: '03/16/2024',
+      description: 'Pruebas de rendimiento',
+      dueDate: new Date(2024, 6, 15),
       completed: false,
-      created: '01/10/2024'
-    },
-    {
+      created: new Date(2024, 3, 25)
+  },
+  {
       id: 5,
-      description: 'responsive design',
-      dueDate: '03/16/2024',
+      description: 'Optimización de código',
+      dueDate: new Date(2024, 4, 25),
       completed: false,
-      created: '01/10/2024'
-    },
-    {
+      created: new Date(2024, 1, 15)
+  },
+  {
       id: 6,
-      description: 'compatibility issues',
-      dueDate: '03/16/2024',
+      description: 'Despliegue en servidor',
+      dueDate: new Date(2024, 7, 20),
       completed: false,
-      created: '01/10/2024'
-    },
-    {
+      created: new Date(2024, 4, 5)
+  },
+  {
       id: 7,
-      description: 'Write unit tests',
-      dueDate: '03/16/2024',
+      description: 'Reunión con el cliente',
+      dueDate: new Date(2024, 3, 25),
       completed: false,
-      created: '01/10/2024'
-    },
-    {
+      created: new Date(2024, 2, 1)
+  },
+  {
       id: 8,
-      description: 'third-party dependencies',
-      dueDate: '03/16/2024',
-      completed: false,
-      created: '01/10/2024'
-    },
-    {
+      description: 'Redacción de documentación',
+      dueDate: new Date(2024, 6, 10),
+      completed: true,
+      created: new Date(2024, 2, 15)
+  },
+  {
       id: 9,
-      description: 'Implement pagination',
-      dueDate: '03/16/2024',
+      description: 'Revisión de código',
+      dueDate: new Date(2024, 5, 5),
       completed: false,
-      created: '01/10/2024'
-    },
-    {
+      created: new Date(2024, 1, 25)
+  },
+  {
       id: 10,
-      description: 'Frontend performance',
-      dueDate: '03/16/2024',
-      completed: false,
-      created: '01/10/2024'
-    },
-    {
+      description: 'Configuración de entorno de desarrollo',
+      dueDate: new Date(2024, 4, 10),
+      completed: true,
+      created: new Date(2024, 2, 20)
+  },
+  {
       id: 11,
-      description: 'error handling',
-      dueDate: '03/16/2024',
+      description: 'Elaboración de informe de progreso',
+      dueDate: new Date(2024, 6, 5),
       completed: false,
-      created: '01/10/2024'
-    },
-    {
+      created: new Date(2024, 3, 1)
+  },
+  {
       id: 12,
-      description: 'Refactor CSS',
-      dueDate: '03/16/2024',
+      description: 'Entrenamiento del personal',
+      dueDate: new Date(2024, 4, 15),
       completed: false,
-      created: '01/10/2024'
-    },
-    {
+      created: new Date(2024, 2, 29)
+  },
+  {
       id: 13,
-      description: 'Write documentation',
-      dueDate: '03/16/2024',
+      description: 'Creación de prototipos',
+      dueDate: new Date(2024, 5, 20),
       completed: false,
-      created: '01/10/2024'
-    },
-    {
+      created: new Date(2024, 2, 8)
+  },
+  {
       id: 14,
-      description: 'Implement file',
-      dueDate: '03/16/2024',
+      description: 'Implementación de seguridad',
+      dueDate: new Date(2024, 7, 1),
       completed: false,
-      created: '01/10/2024'
-    },
-    {
+      created: new Date(2024, 3, 10)
+  },
+  {
       id: 15,
-      description: 'Integrate payment ',
-      dueDate: '03/16/2024',
+      description: 'Revisión de requisitos',
+      dueDate: new Date(2024, 4, 3),
       completed: false,
-      created: '01/10/2024'
-    },
-    {
+      created: new Date(2024, 2, 14)
+  },
+  {
       id: 16,
-      description: 'frontend components',
-      dueDate: '03/16/2024',
-      completed: false,
-      created: '01/10/2024'
-    },
-    {
+      description: 'Entrega de avances al cliente',
+      dueDate: new Date(2024, 7, 10),
+      completed: true,
+      created: new Date(2024, 3, 20)
+  },
+  {
       id: 17,
-      description: 'Implement users',
-      dueDate: '03/16/2024',
+      description: 'Evaluación de herramientas de desarrollo',
+      dueDate: new Date(2024, 5, 12),
       completed: false,
-      created: '01/10/2024'
-    },
-    {
+      created: new Date(2024, 2, 22)
+  },
+  {
       id: 18,
-      description: 'Refactor database',
-      dueDate: '03/16/2024',
+      description: 'Configuración de servidor',
+      dueDate: new Date(2024, 6, 7),
       completed: false,
-      created: '01/10/2024'
-    },
-    {
+      created: new Date(2024, 3, 5)
+  },
+  {
       id: 19,
-      description: 'Optimize SEO',
-      dueDate: '03/16/2024',
+      description: 'Realización de pruebas de usuario',
+      dueDate: new Date(2024, 7, 25),
       completed: false,
-      created: '01/10/2024'
-    },
-    {
+      created: new Date(2024, 3, 15)
+  },
+  {
       id: 20,
-      description: 'Implement WebSocket',
-      dueDate: '03/16/2024',
+      description: 'Implementación de mejoras sugeridas',
+      dueDate: new Date(2024, 5, 30),
       completed: false,
-      created: '01/10/2024'
-    },
-    {
-      id: 21,
-      description: 'Set up CI/CD pipeline',
-      dueDate: '03/16/2024',
-      completed: false,
-      created: '01/10/2024'
-    },
-    {
-      id: 22,
-      description: 'Implement multi-factor',
-      dueDate: '03/16/2024',
-      completed: false,
-      created: '01/10/2024'
-    },
-  ];
-  
+      created: new Date(2024, 3, 8)
+  }
+]
