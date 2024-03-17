@@ -3,7 +3,15 @@ export interface Option {
     label: string;
 }
 
-export interface DropdownProps {
-    options: Option[];
-    setOptionActive: (value:any) => void;
+type Options= {
+    [key:string]:Option[]
 }
+
+
+export interface DropdownProps {
+    options: Options
+    title:string;
+    setSelectedValue: (value:{group:string,value:string}) => void;
+    
+}
+

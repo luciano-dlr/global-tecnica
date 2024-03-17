@@ -1,4 +1,4 @@
-import { filterAlphabeticOptions, filterDueDateOptions, filterStatusOptions } from '../../utils/filtersList';
+import { OPTIONS, STATUSOPTIONS } from '../../utils/filtersList';
 import { Dropdown } from '../Dropdown/Dropdown';
 import { useController } from './Table.controller';
 import { TableProps } from './TableProps';
@@ -6,7 +6,7 @@ import styles from './table.module.scss'
 
 export const Table = ({ tasks, toggleTaskStatus }: TableProps) => {
 
-  const { filteredTasks, handleFilterChange } = useController(tasks);
+  const { filteredTasks, setSelectedValue, setSelectedValueState } = useController(tasks);
 
   return (
     <div className={styles.container}>
@@ -15,16 +15,14 @@ export const Table = ({ tasks, toggleTaskStatus }: TableProps) => {
       </div>
       <div className={styles.containerFilters}>
         <Dropdown
-          options={filterStatusOptions}
-          setOptionActive={value => handleFilterChange('status', value)}
+          title='Filtrar Por'
+          options={OPTIONS}
+          setSelectedValue={setSelectedValue}
         />
         <Dropdown
-          options={filterAlphabeticOptions}
-          setOptionActive={value => handleFilterChange('aplhabetical', value)}
-        />
-        <Dropdown
-          options={filterDueDateOptions}
-          setOptionActive={value => handleFilterChange('dueDate', value)}
+          title='Estado'
+          options={STATUSOPTIONS}
+          setSelectedValue={setSelectedValueState}
         />
       </div>
       <div className={styles.tableContainer}>
@@ -32,13 +30,13 @@ export const Table = ({ tasks, toggleTaskStatus }: TableProps) => {
           {filteredTasks.map((task) => (
             <tr
               key={task.id}
-              onClick={() => toggleTaskStatus(task.id)}
               className={task.completed ? styles.completed : styles.incomplete}>
               <td className={styles.tableCell}>
                 <input
                   type='checkbox'
                   className={styles.checkbox}
                   checked={task.completed}
+                  onClick={() => toggleTaskStatus(task.id)}
                 />
               </td>
               <td className={styles.tableCell}>{task.id}</td>
@@ -47,6 +45,15 @@ export const Table = ({ tasks, toggleTaskStatus }: TableProps) => {
               <td
                 className={`${styles.tableCell} ${task.completed ? styles.completeText : styles.incompleteText}`}>
                 {task.completed ? 'Completado' : 'Incompleto'}
+              </td>
+              <td
+                className={styles.tableCell}
+              >
+                <button
+                  className={task.completed ? styles.tableCellButton : styles.tableCellButtonComplete}
+                  onClick={() => toggleTaskStatus(task.id)}
+                >Cambiar Estado
+                </button>
               </td>
             </tr>
           ))}

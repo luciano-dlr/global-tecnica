@@ -4,6 +4,7 @@
     height: 80%;
     border-radius: 12px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-bottom: 6rem;
    
     &>.titleContainer {
         width: 100%;
@@ -29,7 +30,7 @@
         overflow-y: auto;
         white-space: nowrap;
         display: block;
-        height: calc(100% - 4rem);
+        height: calc(100% - 2rem);
         scrollbar-width: none;
 
         &>.table {
@@ -40,6 +41,7 @@
                 overflow: scroll;
                 width: 100%;
                 border-bottom: 2px solid #171427;
+               
 
                 &.completed {
                     background-color: #1a162d;
@@ -54,6 +56,7 @@
                     font-weight: 400;
                     font-family: 'Montserrat';
                     color: white;
+                    
 
                     &.completeText {
                         padding: 14px;
@@ -61,6 +64,7 @@
                         font-weight: 500;
                         font-family: 'Montserrat';
                         color: green;
+                        width: 300px;
                     }
 
                     &.incompleteText {
@@ -69,6 +73,31 @@
                         font-weight: 500;
                         font-family: 'Montserrat';
                         color: red;
+                        width: 300px;
+
+                    }
+
+                    &>.tableCellButton{
+                        font-size: 12px;
+                        background-color: #100d1e;
+                        cursor: pointer;
+                        color: whitesmoke;
+                        border: 1px solid gray;
+                        border-radius: 4px;
+                        font-weight: 600;
+                        padding: 4px;
+                        width: 140px;
+                    }
+                    &>.tableCellButtonComplete{
+                        font-size: 12px;
+                        background-color: #100d1e;
+                        cursor: pointer;
+                        color: whitesmoke;
+                        border: 1px solid gray;
+                        border-radius: 4px;
+                        font-weight: 600;
+                        padding: 4px;
+                        width: 140px;
                     }
 
                     &>.checkbox {

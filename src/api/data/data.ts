@@ -5,7 +5,7 @@ export const Tasks:Task[]  = [
       id: 1,
       description: 'Autenticación',
       dueDate: new Date(2024, 3, 18),
-      completed: true,
+      completed: false,
       created: new Date(2024, 2, 5)
   },
   {
@@ -54,7 +54,7 @@ export const Tasks:Task[]  = [
       id: 8,
       description: 'Redacción de documentación',
       dueDate: new Date(2024, 6, 10),
-      completed: true,
+      completed: false,
       created: new Date(2024, 2, 15)
   },
   {
@@ -68,7 +68,7 @@ export const Tasks:Task[]  = [
       id: 10,
       description: 'Configuración de entorno de desarrollo',
       dueDate: new Date(2024, 4, 10),
-      completed: true,
+      completed: false,
       created: new Date(2024, 2, 20)
   },
   {
@@ -110,7 +110,7 @@ export const Tasks:Task[]  = [
       id: 16,
       description: 'Entrega de avances al cliente',
       dueDate: new Date(2024, 7, 10),
-      completed: true,
+      completed: false,
       created: new Date(2024, 3, 20)
   },
   {

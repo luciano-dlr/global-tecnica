@@ -5,9 +5,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
     & .textExample {
         color: white;
     }
 
+}
+@media screen and (max-width: 500px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
 }
