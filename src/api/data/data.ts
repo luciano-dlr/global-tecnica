@@ -103,7 +103,7 @@ export const Tasks:Task[]  = [
       id: 15,
       description: 'Revisión de requisitos',
       dueDate: new Date(2024, 4, 3),
-      completed: false,
+      completed: true,
       created: new Date(2024, 2, 14)
   },
   {
@@ -117,7 +117,7 @@ export const Tasks:Task[]  = [
       id: 17,
       description: 'Evaluación de herramientas de desarrollo',
       dueDate: new Date(2024, 5, 12),
-      completed: false,
+      completed: true,
       created: new Date(2024, 2, 22)
   },
   {
@@ -131,7 +131,7 @@ export const Tasks:Task[]  = [
       id: 19,
       description: 'Realización de pruebas de usuario',
       dueDate: new Date(2024, 7, 25),
-      completed: false,
+      completed: true,
       created: new Date(2024, 3, 15)
   },
   {
