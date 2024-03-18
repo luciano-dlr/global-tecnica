@@ -5,7 +5,7 @@ type OptionType = {
 export const OPTIONS: OptionType = {
   orden:[
     {
-      label:"predeterminado",
+      label:"Predeterminado",
       value:"sinfiltro",
     },
   ],
